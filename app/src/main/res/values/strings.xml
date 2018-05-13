@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Oslo tour guide</string>
+
+    <string name="hotels">Hotels</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="events">Events</string>
+    <!-- Oslo pass -->
+    <string name="oslo_pass">Buy the Oslo Pass</string>
+    <string name="adult">Adult</string>
+    <string name="child">Child</string>
+    <string name="senior">Senior</string>
+    <string name="adult_price_24h">24 hours: 395 NOK (≈ 41 EUR)</string>
+    <string name="child_price_24h">24 hours: 210 NOK (≈ 22 EUR)</string>
+    <string name="senior_price_24h">24 hours: 315 NOK (≈ 33 EUR)</string>
+    <!-- Events -->
+    <string name="event_17May">17 May - Consitutional Day</string>
+    <string name="event_25May">25 May - Medieval Festival</string>
+    <string name="event_2June">2 June - National Music Day</string>
+    <string name="event_7June">7 June - Oslo Bislett Games</string>
+    <!-- Hotels -->
+    <string name="hotel_grand">Grand Hotel</string>
+    <string name="hotel_grand_address">Karl Johans gate 31, Oslo, Norway</string>
+    <string name="hotel_radisson">Radisson Blue Hotel</string>
+    <string name="hotel_radisson_address">Holbergsgate 30 N-0166, Oslo, Norway </string>
+    <string name="hotel_thon">Thon Hotel Panorama</string>
+    <string name="hotel_thon_address">Rådhusgaten 7b, 0151 Oslo, Norway </string>
+    <!-- Restaurants -->
+    <string name="restaurant_statholdergaarden">Statholdergaarden</string>
+    <string name="restaurant_statholdergaarden_address">Rådhusgate 11, Oslo, Norway</string>
+    <string name="restaurant_fjord">Restaurant Fjord</string>
+    <string name="restaurant_fjord_address">Rådhusgate 11, Oslo, Norway</string>
+    <string name="restaurant_ruffino">Ruffino Ristorante Italiano</string>
+    <string name="restaurant_ruffino_address">Arbins gate 1, 0253, Oslo, Norway</string>
+    <!-- Museums -->
+    <string name="museum_technology">Norwegian Museum of Science and Technology</string>
+    <string name="museum_technology_address">Kjelsåsveien 143, 0491 Oslo, Norway</string>
+    <string name="museum_national">National Museum</string>
+    <string name="museum_national_address">St. Olavs plass, N–0130 Oslo, Norway</string>
+    <string name="museum_culture">Norwegian Museum of Cultural History</string>
+    <string name="museum_culture_address">Museumsveien 10, 0287 Oslo, Norway</string>
+
+</resources>
