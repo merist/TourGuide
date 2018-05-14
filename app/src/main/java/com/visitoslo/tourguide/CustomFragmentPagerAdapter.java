@@ -10,9 +10,8 @@ import android.support.v4.app.FragmentPagerAdapter;
  */
 
 public class CustomFragmentPagerAdapter extends FragmentPagerAdapter {
-    private Context context;
-    final int PAGE_COUNT = 4;
-    private String tabTitles[] = new String[]{"Home", "Hotels", "Restaurants", "Museums"};
+    private Context mContext;
+    private static final int PAGE_COUNT = 5;
 
     /**
      * Create a new {@link CustomFragmentPagerAdapter} object.
@@ -23,19 +22,22 @@ public class CustomFragmentPagerAdapter extends FragmentPagerAdapter {
      */
     public CustomFragmentPagerAdapter(Context context, FragmentManager fragmentManager) {
         super(fragmentManager);
-        context = context;
+        mContext = context;
     }
 
     @Override
     public Fragment getItem(int position) {
-        if (position == 1) {
-            return new HotelFragment();
-        } else if (position == 2) {
-            return new RestaurantFragment();
-        } else if (position == 3) {
-            return new MuseumFragment();
-        } else {
-            return new HomeFragment();
+        switch (position) {
+            case 1:
+                return new HotelFragment();
+            case 2:
+                return new RestaurantFragment();
+            case 3:
+                return new MuseumFragment();
+            case 4:
+                return new EventFragment();
+            default:
+                return new HomeFragment();
         }
     }
 
@@ -46,7 +48,18 @@ public class CustomFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        // Generate title based on item position
-        return tabTitles[position];
+        // Return title based on item position
+        switch (position) {
+            case 1:
+                return mContext.getResources().getString(R.string.hotels);
+            case 2:
+                return mContext.getResources().getString(R.string.restaurants);
+            case 3:
+                return mContext.getResources().getString(R.string.museums);
+            case 4:
+                return mContext.getResources().getString(R.string.events);
+            default:
+                return mContext.getResources().getString(R.string.home);
+        }
     }
 }

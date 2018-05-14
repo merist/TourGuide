@@ -14,6 +14,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="170dp"
+            android:scaleType="centerCrop"
             android:src="@drawable/header" />
 
         <LinearLayout
@@ -25,40 +26,24 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/events"
-                android:textColor="#3086a0"
-                android:textSize="20sp" />
-
-            <TextView
-                style="@style/NormalText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/event_17May" />
-
-            <TextView
-                style="@style/NormalText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/event_25May" />
-
-            <TextView
-                style="@style/NormalText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/event_2June" />
-
-            <TextView
-                style="@style/NormalText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/event_7June" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/oslo_pass"
-                android:textColor="#3086a0"
-                android:textSize="20sp" />
+                android:textColor="@color/blueHeaderFont"
+                android:textSize="@dimen/mediumText" />
+
+            <TextView
+                style="@style/NormalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin5"
+                android:gravity="left"
+                android:text="@string/oslo_pass_desc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oslo_pass_price"
+                android:textColor="@color/blueHeaderFont"
+                android:textSize="@dimen/mediumText" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -77,7 +62,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/margin20"
-                    android:text="@string/adult_price_24h"/>
+                    android:text="@string/adult_price_24h" />
             </LinearLayout>
 
             <LinearLayout
@@ -116,8 +101,8 @@
                     style="@style/NormalText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/senior_price_24h"
-                    android:paddingLeft="@dimen/margin10"/>
+                    android:paddingLeft="@dimen/margin10"
+                    android:text="@string/senior_price_24h" />
             </LinearLayout>
 
             <ImageView
