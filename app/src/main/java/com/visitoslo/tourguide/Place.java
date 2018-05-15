@@ -17,24 +17,12 @@ public class Place {
         this.imageResourceId = imageResourceId;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getName() {
         return name;
     }
 
-    public void setImageResourceId(int imageResourceId) {
-        this.imageResourceId = imageResourceId;
-    }
-
     public int getImageResourceId() {
         return imageResourceId;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
     }
 
     public String getAddress() {
